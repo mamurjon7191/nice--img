@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --height: -300;
+  --heightBig: 0;
+}
+
+.down {
+  transition: 1s all;
+  transform: translateY(calc(var(--height) * 1vh));
+}
+
+.up {
+  transition: 1s all;
+  transform: translateY(calc(var(--heightBig) * 1vh));
+}
+
+/* .big--side {
+  height: 100vh;
+  overflow: hidden;
+}
+.small--side {
+  height: 100vh;
+  overflow: hidden;
+} */
+.whole__pictures {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 100vh 100vh 100vh 100vh;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+.btnFull {
+  position: fixed;
+  margin-left: 428px;
+  margin-top: 360px;
+  z-index: 1000;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
